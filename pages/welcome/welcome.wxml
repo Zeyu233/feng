@@ -1,0 +1,11 @@
+<!--pages/welcome/welcome.wxml-->
+
+<view class="container">
+  <!-- <image class="avatar" src="/images/avatar/1.png"></image> -->
+  <l-avatar class="l-avatar" placement="bottom" size="180" open-data="{{['userAvatarUrl','userNickName']}}" />
+  <text class="motto">helle,奥特曼</text>
+  <!-- <button>开启小程序之旅</button> -->
+  <view bind:tap="onTap" class="journey-container">
+    <text class="journey">开启小程序之旅</text>
+  </view>
+</view>

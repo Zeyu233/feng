@@ -1,0 +1,19 @@
+<!--pages/posts/posts.wxml-->
+<view>
+  <swiper circular indicator-dots interval="{{3000}}">
+    <swiper-item>
+      <image data-post-id="3" bind:tap="onGoToDetail"  src="/images/bestplayers.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-post-id="0" bind:tap="onGoToDetail" src="/images/lpl.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-post-id="4" bind:tap="onGoToDetail" src="/images/jumpfly.png"></image>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{posts}}" wx:key="postId">
+    <post bind:post-tap="onGoToDetail" res= "{{item}}"></post>
+  </block>
+  
+</view>

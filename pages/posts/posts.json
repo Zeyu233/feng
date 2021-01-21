@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "post":"/components/post/index"
+  },
+  "navigationBarBackgroundColor": "#C22A1E"
+
+}
